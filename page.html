@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Display</title>
+    <style>
+      /* עיצוב כללי לעמוד */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white; /* רקע לבן לעמוד */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* גובה מלא של המסך */
+        width: 100vw; /* רוחב מלא של המסך */
+      }
+
+      /* תיבת הספר */
+      .book-container {
+        background-color: #e0f7fa; /* רקע תכלת */
+        padding: 20px; /* ריווח פנימי */
+        border-radius: 10px; /* פינות מעוגלות */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל */
+        text-align: center; /* יישור טקסט למרכז */
+        width: 1200px; /* הרחבת הרוחב של הרקע פי 2 */
+        margin: 20px; /* ריווח כללי סביב תיבת הספר */
+      }
+
+      /* כותרת */
+      .book-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #00796b; /* צבע טקסט ירוק כהה */
+        margin-bottom: 20px; /* ריווח מתחת לכותרת */
+        white-space: nowrap; /* מונע ירידה לשורה חדשה */
+        overflow: hidden; /* חותך טקסט אם חורג מהמסגרת */
+        text-overflow: ellipsis; /* מוסיף "..." אם הטקסט חורג */
+      }
+
+      /* תמונה */
+      .book-cover {
+        width: 40%; /* הקטנה לרוחב קטן יותר (הקטנה לכ-40% מהתיבה) */
+        height: auto; /* שמירה על פרופורציות התמונה */
+        border-radius: 5px; /* פינות מעוגלות לתמונה */
+        margin-bottom: 15px; /* ריווח מתחת לתמונה */
+      }
+
+      /* שם המחבר */
+      .book-author {
+        font-size: 18px;
+        color: #004d40; /* צבע טקסט כהה */
+        margin-bottom: 15px; /* ריווח מתחת לשם המחבר */
+        font-weight: bold; /* טקסט מודגש */
+      }
+
+      /* תיאור הספר */
+      .book-description {
+        font-size: 16px;
+        color: #000; /* צבע שחור */
+        text-align: left; /* יישור לשמאל */
+        line-height: 1.5; /* גובה שורה נוח */
+        margin-bottom: 15px; /* ריווח מתחת לתיאור */
+      }
+
+      /* זכויות */
+      .book-copyright {
+        font-size: 12px;
+        color: #757575; /* צבע אפור */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- תיבת הספר -->
+    <div class="book-container">
+      <!-- כותרת -->
+      <div class="book-title">Book Component By Function</div>
+
+      <!-- תמונה -->
+      <img class="book-cover" src="C:\NodeJS3\js_book.jpg" alt="Book Cover" />
+
+      <!-- שם המחבר -->
+      <div class="book-author">By Kyle Simpson</div>
+
+      <!-- תיאור הספר -->
+      <div class="book-description">
+        Parts of the language that many JavaScript<br />
+        programmers simply avoid.
+      </div>
+
+      <!-- זכויות -->
+      <div class="book-copyright">© 2024 Lili vainer</div>
+    </div>
+  </body>
+</html>
